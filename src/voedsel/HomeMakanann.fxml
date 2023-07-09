@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FBF7F7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voedsel.HomeMakananController">
+   <children>
+      <ImageView fitHeight="588.0" fitWidth="910.0" layoutX="-94.0" layoutY="-216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="23.0" layoutY="243.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: #FBF7F7;" text="Home">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Line endX="892.0" layoutX="388.0" layoutY="159.0" opacity="0.3" startX="-390.0" stroke="#00000080" strokeWidth="0.5" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="892.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/search.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="makananButton" layoutX="441.0" layoutY="93.0" mnemonicParsing="false" onAction="#handlemakananButtonButtonAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FBF7F7; -fx-text-fill: #362415; -fx-font-family: Montserrat;" text="Makanan" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button fx:id="bahanmakananButton" layoutX="611.0" layoutY="93.0" mnemonicParsing="false" onAction="#handlebahanmakananButtonButtonAction" opacity="0.3" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #FBF7F7; -fx-text-fill: #362415; -fx-font-family: Montserrat;" text="Bahan Makanan" textAlignment="RIGHT">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Button>
+      <Line endX="-181.33331298828125" endY="-62.0" layoutX="311.0" layoutY="220.0" startX="-181.33331298828125" startY="504.0" stroke="#00000080" strokeWidth="0.3" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbf7f7" height="399.0" layoutX="154.0" layoutY="229.0" stroke="#c3c3c3" strokeType="INSIDE" strokeWidth="0.3" width="301.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="216.0" fitWidth="250.0" layoutX="180.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/makanan.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="183.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahan Makanan yang berhasil diselamatkan">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="197.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 Bahan Makanan">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="671.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Montserrat;">
+         <font>
+            <Font name="Cambria" size="10.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="463.0" layoutY="159.0" prefHeight="559.0" prefWidth="813.0">
+         <content>
+            <VBox prefHeight="137.0" prefWidth="797.0">
+               <children>
+                  <HBox fillHeight="false" prefHeight="137.0" prefWidth="797.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/nasi%20goreng.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="150.0" prefWidth="647.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Nasi Goreng Pak Budi">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="12.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="12.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="pembeli1Button" layoutX="541.0" layoutY="64.0" mnemonicParsing="false" onAction="#handlepenjual1ButtonButtonAction" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #0b421a;" text="Pesan" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="137.0" prefWidth="797.0">
+                     <children>
+                        <ImageView fitHeight="135.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/ayam.jpeg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="152.0" prefWidth="628.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Nasi Ayam">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="12.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="12.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="pembeli2Button" layoutX="540.0" layoutY="52.0" mnemonicParsing="false" onAction="#handlepembeli2ButtonButtonAction" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #0b421a;" text="Pesan" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="152.0" prefWidth="809.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/nasi%20kotak.jpeg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="152.0" prefWidth="628.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Nasi Kotak Mama">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="12.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="12.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="pembeli3Button" layoutX="541.0" layoutY="64.0" mnemonicParsing="false" onAction="#handlepembeli3ButtonButtonAction" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #0b421a;" text="Pesan" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="152.0" prefWidth="809.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/warteg.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="152.0" prefWidth="628.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Warteg Bahari">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="12.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="12.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="pembeli4Button" layoutX="541.0" layoutY="64.0" mnemonicParsing="false" onAction="#handlepembeli4ButtonButtonAction" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #0b421a;" text="Pesan" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="152.0" prefWidth="809.0">
+                     <children>
+                        <ImageView fitHeight="133.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/Nasi%20Gudeg.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="152.0" prefWidth="628.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Nasi Gudeg ">
+                                 <font>
+                                    <Font name="Calibri Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="12.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="12.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 min">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="14.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asset/star.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="31.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4,6 (244)">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="pembeli5Button" layoutX="541.0" layoutY="64.0" mnemonicParsing="false" onAction="#handlepembeli5ButtonButtonAction" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #0b421a;" text="Pesan" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="38.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="37.0" layoutY="372.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/informasi.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="30.0" layoutY="247.0" mnemonicParsing="false" onAction="#handlemenuButtonButtonAction" prefHeight="32.0" prefWidth="69.0" style="-fx-background-color: #FBF7F7;" text="Menu">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="22.0" layoutY="628.0" mnemonicParsing="false" onAction="#handleLogoutButtonButtonAction" opacity="0.3" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #FBF7F7;" text="Logout">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="1179.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/user.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="riwayatButton" layoutX="11.0" layoutY="429.0" mnemonicParsing="false" onAction="#handleRiwayatButtonButtonAction" opacity="0.3" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: #FBF7F7;" text="Informasi">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="38.0" layoutY="582.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/log%20out.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

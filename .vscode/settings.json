@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\ASUS\\Downloads\\xstream-1.4.20.jar",
+        "c:\\Users\\ASUS\\Downloads\\jfoenix-9.0.10.jar",
+        "c:\\Users\\user\\Downloads\\xstream-1.4.20.jar",
+        "c:\\Users\\ACER\\Downloads\\xstream-1.4.20.jar"
+    ]
+}

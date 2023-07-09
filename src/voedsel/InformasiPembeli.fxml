@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FBF7F7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voedsel.InformasiController">
+   <children>
+      <ImageView fitHeight="588.0" fitWidth="910.0" layoutX="-94.0" layoutY="-216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="892.0" layoutX="388.0" layoutY="159.0" opacity="0.3" startX="-390.0" stroke="#00000080" strokeWidth="0.5" />
+      <Line endX="-181.33331298828125" endY="-62.0" layoutX="311.0" layoutY="220.0" startX="-181.33331298828125" startY="504.0" stroke="#00000080" strokeWidth="0.3" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbf7f7" height="399.0" layoutX="154.0" layoutY="229.0" stroke="#c3c3c3" strokeType="INSIDE" strokeWidth="0.3" width="301.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="216.0" fitWidth="250.0" layoutX="180.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/makanan.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="213.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History Pesanan">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="671.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Montserrat;">
+         <font>
+            <Font name="Cambria" size="10.0" />
+         </font>
+      </Text>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="38.0" layoutY="193.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="menuButton1" accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="39.0" layoutY="598.0" onDragDetected="#handlemenuButtonButtonAction" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/log%20out.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="menuButton2" accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="37.0" layoutY="395.0" onDragDetected="#handlemenuButtonButtonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/informasi.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="32.0" layoutY="247.0" mnemonicParsing="false" onAction="#handlemenuButtonButtonAction" opacity="0.3" prefHeight="32.0" prefWidth="69.0" style="-fx-background-color: #FBF7F7;" text="Menu">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="23.0" layoutY="654.0" mnemonicParsing="false" onAction="#handleLogoutButtonButtonAction" opacity="0.3" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #FBF7F7;" text="Log Out">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="informasiButton" layoutX="17.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleinformasiButtonButtonAction" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #FBF7F7;" text="Informasi">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="69.0" layoutX="1179.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/user.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="471.0" layoutY="158.0" prefHeight="557.0" prefWidth="809.0">
+         <content>
+            <VBox prefHeight="682.0" prefWidth="793.0">
+               <children>
+                  <HBox prefHeight="133.0" prefWidth="793.0">
+                     <children>
+                        <AnchorPane prefHeight="133.0" prefWidth="166.0">
+                           <children>
+                              <ImageView fitHeight="135.0" fitWidth="139.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asset/nasi%20kotak.jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="138.0" prefWidth="631.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Nasi Kotak Mama">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 km">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35 min">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="133.0" prefWidth="793.0">
+                     <children>
+                        <AnchorPane prefHeight="133.0" prefWidth="166.0">
+                           <children>
+                              <ImageView fitHeight="135.0" fitWidth="139.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asset/WhatsApp%20Image%202023-07-09%20at%2017.16.56.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="138.0" prefWidth="631.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Superindo">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 km">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35 min">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="133.0" prefWidth="793.0">
+                     <children>
+                        <AnchorPane prefHeight="133.0" prefWidth="166.0">
+                           <children>
+                              <ImageView fitHeight="135.0" fitWidth="139.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asset/nasi%20goreng.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="138.0" prefWidth="631.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Mumer Kitchen">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 km">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35 min">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="133.0" prefWidth="793.0">
+                     <children>
+                        <AnchorPane prefHeight="133.0" prefWidth="166.0">
+                           <children>
+                              <ImageView fitHeight="135.0" fitWidth="139.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asset/WhatsApp%20Image%202023-07-09%20at%2017.16.55.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="138.0" prefWidth="631.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Catering Doa Ibu">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 km">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35 min">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="133.0" prefWidth="793.0">
+                     <children>
+                        <AnchorPane prefHeight="133.0" prefWidth="166.0">
+                           <children>
+                              <ImageView fitHeight="135.0" fitWidth="139.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asset/kol.jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="138.0" prefWidth="631.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Sayur Kol">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 km">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35 min">
+                                 <font>
+                                    <Font name="Calibri" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

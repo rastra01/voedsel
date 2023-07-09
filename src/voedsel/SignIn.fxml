@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f1efe7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voedsel.SignInController">
+   <children>
+      <ImageView fitHeight="309.0" fitWidth="339.0" layoutX="15.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/full%20logo2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="733.0" fitWidth="1280.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/background.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.7" />
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="748.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bergabung dengan Kami!" wrappingWidth="339.0">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameField" layoutX="744.0" layoutY="454.0" prefHeight="30.0" prefWidth="170.0" promptText="username" />
+      <Text fill="WHITE" layoutX="744.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="745.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="daftarButton" layoutX="983.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleDaftarButtonButtonAction" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #379237; -fx-font-weight: bold;" text="Daftar" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.5394737124443054" green="0.5394737124443054" blue="0.5394737124443054" opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text layoutX="1130.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="kembali ke ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="menuButton" layoutX="1193.0" layoutY="157.0" mnemonicParsing="false" onAction="#handlemenuButtonAction" style="-fx-background-color: light; -fx-font-weight: bold;" text="beranda" textFill="#379237" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="resultLabel" layoutX="960.0" layoutY="427.0" prefHeight="17.0" prefWidth="170.0" textFill="RED">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="141.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kurangi limbah makanan di sekitar Anda bersama Voedsel" textAlignment="CENTER" wrappingWidth="289.40625">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satu Makanan Sangat Berharga" textAlignment="CENTER" wrappingWidth="419.40625">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="passwordField" layoutX="744.0" layoutY="526.0" prefHeight="30.0" prefWidth="170.0" promptText="password" />
+      <ComboBox fx:id="roleComboBox" layoutX="943.0" layoutY="454.0" prefHeight="30.0" prefWidth="153.0" promptText="Pilih" />
+   </children>
+</AnchorPane>

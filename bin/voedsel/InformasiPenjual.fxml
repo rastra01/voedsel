@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FBF7F7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="voedsel.InformasiPenjualController">
+   <children>
+      <ImageView fitHeight="588.0" fitWidth="910.0" layoutX="-84.0" layoutY="-206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="726.0" fitWidth="1283.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/background.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.8" />
+         </effect>
+      </ImageView>
+      <Text layoutX="1032.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="150.7734375">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="859.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+      <Text layoutX="1175.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hero">
+         <font>
+            <Font name="Bell MT Bold" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="261.0" fitWidth="318.0" layoutX="927.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/achievement_penjual.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="menuButton" layoutX="40.0" layoutY="257.0" mnemonicParsing="false" onAction="#handlemenuButtonButtonAction" opacity="0.6" prefHeight="32.0" prefWidth="69.0" style="-fx-background-color: #FBF7F7;" text="Menu">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Line endX="892.0" layoutX="398.0" layoutY="169.0" opacity="0.3" startX="-390.0" stroke="#00000080" strokeWidth="0.5" />
+      <Line endX="-181.33331298828125" endY="-62.0" layoutX="321.0" layoutY="230.0" startX="-181.33331298828125" startY="504.0" stroke="#00000080" strokeWidth="0.3" />
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="203.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="48.0" layoutY="592.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/log%20out.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="54.0" fitWidth="54.0" layoutX="47.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/informasi.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="InformasiButton" layoutX="23.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleInformasiButtonAction" prefHeight="43.0" prefWidth="104.0" style="-fx-background-color: #FBF7F7;" text="Informasi">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="32.0" layoutY="638.0" mnemonicParsing="false" onAction="#handlelogoutButtonButtonAction" opacity="0.6" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #FBF7F7;" text="Logout">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <BarChart fx:id="BarChart" layoutX="145.0" layoutY="180.0" prefHeight="483.0" prefWidth="772.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
